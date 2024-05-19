@@ -15,7 +15,10 @@ namespace MyFirstMVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            Student student = new Student();
+            student.Name = "Siphephelo Myeni";
+            student.City = "Durban";
+            return View(student);
         }
 
         public IActionResult Privacy()
